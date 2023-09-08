@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+versionmanager/__init__.py
+versionmanager/ver.py
+versionmanager.egg-info/PKG-INFO
+versionmanager.egg-info/SOURCES.txt
+versionmanager.egg-info/dependency_links.txt
+versionmanager.egg-info/top_level.txt

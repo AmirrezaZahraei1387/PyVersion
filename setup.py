@@ -3,7 +3,7 @@ from setuptools import setup
 import sys
 
 setup(
-    name='pyv',
+    name='versionmanager',
     version='0.1',
     description='A cross platform version management tool.',
     author='Amirreza Zahraei',

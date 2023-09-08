@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyv/__init__.py
+pyv/ver.py
+pyvr.egg-info/PKG-INFO
+pyvr.egg-info/SOURCES.txt
+pyvr.egg-info/dependency_links.txt
+pyvr.egg-info/top_level.txt

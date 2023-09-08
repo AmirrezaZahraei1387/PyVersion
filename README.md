@@ -9,15 +9,15 @@ them. You can either use the normal __init__ or the fromstr
 class method.
 
 ```python
-import pyv
+import versionmanager
 
-version = pyv.PyVersion(4, 3, 2, 1)
+version = versionmanager.PyVersion(4, 3, 2, 1)
 ```
 
 ```python
-import pyv
+import versionmanager
 
-version = pyv.PyVersion().fromstr("5.4.4.2")
+version = versionmanager.PyVersion().fromstr("5.4.4.2")
 ```
 
 ### Using Comparison Operators
@@ -26,15 +26,15 @@ the comparison operators are all overloaded
 and so can be used with the versions.
 
 ```python
-import pyv
+import versionmanager
 
-v_1= pyv.PyVersion().fromstr("5.4.4.2")
-v_2 = pyv.PyVersion().fromstr("5.7.4")
+v_1 = versionmanager.PyVersion().fromstr("5.4.4.2")
+v_2 = versionmanager.PyVersion().fromstr("5.7.4")
 
-print(v_1 == v_2) # False
-print(v_1 != v_2) # True
-print(v_1 >= v_2) # False
-print(v_1 <= v_2) # True
+print(v_1 == v_2)  # False
+print(v_1 != v_2)  # True
+print(v_1 >= v_2)  # False
+print(v_1 <= v_2)  # True
 print(v_1 > v_2)  # False
 print(v_1 < v_2)  # True
 ```
@@ -46,12 +46,12 @@ end of the version. for example version 4.8 can get 4 trailing
 zeros and become 4.8.0.0.0.0.
 
 ```python
-import pyv
+import versionmanager
 
-v_1= pyv.PyVersion().fromstr("5.4.4.2")
+v_1 = versionmanager.PyVersion().fromstr("5.4.4.2")
 
 v_1.resize(2, 0)
-print(v_1) # 5.4.4.2.0.0
+print(v_1)  # 5.4.4.2.0.0
 ```
 
 The last argument is optional. it defines what value should be
@@ -61,12 +61,12 @@ You can also give negative numbers as the trailing version number.
 In this case instead of adding it will remove the version numbers.
 
 ```python
-import pyv
+import versionmanager
 
-v_1= pyv.PyVersion().fromstr("5.4.4.2")
+v_1 = versionmanager.PyVersion().fromstr("5.4.4.2")
 
 v_1.resize(-2, 0)
-print(v_1) # 5.4
+print(v_1)  # 5.4
 ```
 
 ### Other Useful Functionalities
