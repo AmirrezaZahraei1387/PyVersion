@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: Vmanager
+Version: 0.1
+Summary: A cross platform version management tool.
+Home-page: https://github.com/AmirrezaZahraei1387/PyVersion
+Author: Amirreza Zahraei
+Author-email: amir.reza.zahraei@gmail.com
+License: MIT
+Keywords: version,version management,version comparison,packaging,latest version
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+
+UNKNOWN
+

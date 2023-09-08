@@ -3,7 +3,7 @@ from setuptools import setup
 import sys
 
 setup(
-    name='versionmanager',
+    name='Vmanager',
     version='0.1',
     description='A cross platform version management tool.',
     author='Amirreza Zahraei',
