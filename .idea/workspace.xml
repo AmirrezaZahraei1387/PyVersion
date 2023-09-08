@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f984151-8ffd-4ccc-a0d4-d666ade0878d" name="Changes" comment="the new class named PyVersion and methods for doing resizing, __eq__, __ne__ and converting to string are added">
+    <list default="true" id="8f984151-8ffd-4ccc-a0d4-d666ade0878d" name="Changes" comment="methods for removing redundant values from version and normalizing two versions for a doing a certaion job created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyv/ver.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyv/ver.py" afterDir="false" />
     </list>
@@ -52,7 +52,8 @@
       <option name="presentableId" value="Default" />
       <updated>1694053812994</updated>
       <workItem from="1694053817158" duration="4586000" />
-      <workItem from="1694131354189" duration="1060000" />
+      <workItem from="1694131354189" duration="3505000" />
+      <workItem from="1694138210798" duration="617000" />
     </task>
     <task id="LOCAL-00001" summary="new python package named pyv is added">
       <created>1694054006082</created>
@@ -68,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694057534642</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="methods for removing redundant values from version and normalizing two versions for a doing a certaion job created">
+      <created>1694132864393</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694132864393</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,9 +96,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new python package named pyv is added" />
     <MESSAGE value="the new class named PyVersion and methods for doing resizing, __eq__, __ne__ and converting to string are added" />
-    <option name="LAST_COMMIT_MESSAGE" value="the new class named PyVersion and methods for doing resizing, __eq__, __ne__ and converting to string are added" />
+    <MESSAGE value="methods for removing redundant values from version and normalizing two versions for a doing a certaion job created" />
+    <option name="LAST_COMMIT_MESSAGE" value="methods for removing redundant values from version and normalizing two versions for a doing a certaion job created" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pyvrsion$ver.coverage" NAME="ver Coverage Results" MODIFIED="1694132360038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyv" />
+    <SUITE FILE_PATH="coverage/pyvrsion$ver.coverage" NAME="ver Coverage Results" MODIFIED="1694138807759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyv" />
   </component>
 </project>
