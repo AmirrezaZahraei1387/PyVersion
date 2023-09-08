@@ -115,6 +115,20 @@ class PyVersion:
     def __le__(self, version):
         return self.__eq__(version) or self.__lt__(version)
 
+    def __getitem__(self, item):
+        return self.__version_numbers[item]
+
+    def __setitem__(self, key, value):
+        self.__version_numbers[key] = value
+
+    def insertend(self, item):
+        self.__version_numbers.append(item)
+        self.__number_count += 1
+
+    def insertfront(self, item):
+        self.__version_numbers.insert(0, item)
+        self.__number_count += 1
+
     def __repr__(self):
         return "PyVersion"+str(tuple(self.version_numbers))
 
