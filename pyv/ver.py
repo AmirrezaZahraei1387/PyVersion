@@ -5,6 +5,17 @@ SEPERATOR = '.'
 DEFAULT_V_NUM = 0
 
 
+def normalize(v1, v2):
+    difference = v1.number_count - v2.number_count
+
+    if v1.number_count > v2.number_count:
+        v2.resize(difference)
+    elif v1.number_count < v2.number_count:
+        v1.resize(difference)
+
+    return v1, v2
+
+
 class PyVersion:
     __number_count: int = 0
     __version_numbers: list = None
@@ -56,20 +67,39 @@ class PyVersion:
             for index in range(-ls_sp):
                 self.__version_numbers.pop(DEFAULT_V_NUM)
 
+    def removeRedundant(self, value=0):
+        counter = 0
+
+        for index in range(self.__number_count):
+            if self.__version_numbers[index] != value:
+                break
+            counter += 1
+        self.resize(-counter)
+
     def __eq__(self, version):
-        difference = self.__number_count - version.number_count
+        ver_1, ver_2 = normalize(self, version)
 
-        if self.__number_count > version.number_count:
-            version.resize(difference)
-        elif self.__number_count < version.number_count:
-            self.resize(difference)
-
-        for (v1, v2) in zip(self.__version_numbers, version.version_numbers):
+        for (v1, v2) in zip(ver_1.__version_numbers, ver_2.version_numbers):
             if v1 != v2:
                 return False
         return True
 
     def __ne__(self, version):
         return not self.__eq__(version)
+
+
+
+a = PyVersion().fromstr("5.3.3")
+b = PyVersion().fromstr("4")
+print(a)
+print(b)
+print(a == b)
+print(a, a.number_count)
+print(b, b.number_count)
+a.removeRedundant()
+b.removeRedundant()
+print(a, a.number_count)
+print(b, b.number_count)
+
 
 
