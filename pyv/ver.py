@@ -46,14 +46,14 @@ class PyVersion:
             ...
         return cls(*num_ls)
 
-    def resize(self, ls_sp):
+    def resize(self, ls_sp, value = DEFAULT_V_NUM):
 
         if -ls_sp > self.__number_count:
             raise ValueError("the resizing number is out of accepted range")
 
         if ls_sp >= 0:
             for index in range(ls_sp):
-                self.__version_numbers.append(DEFAULT_V_NUM)
+                self.__version_numbers.append(value)
         else:
             # making the number positive to make it easier
             ls_sp_p = -ls_sp
@@ -81,8 +81,11 @@ class PyVersion:
 
     def __str__(self):
         version = ""
-        for num in self.__version_numbers:
-            version += SEPERATOR+str(num)
+        for index in range(self.__number_count):
+            if index == 0:
+                version += str(self.__version_numbers[index])
+                continue
+            version += SEPERATOR+str(self.__version_numbers[index])
         return version
 
     def __eq__(self, version):
@@ -115,11 +118,15 @@ class PyVersion:
     def __le__(self, version):
         return self.__eq__(version) or self.__lt__(version)
 
-    def __getitem__(self, item):
-        return self.__version_numbers[item]
+    def __getitem__(self, index):
+        return self.__version_numbers[index]
 
     def __setitem__(self, key, value):
         self.__version_numbers[key] = value
+
+    def pop(self, index):
+        self.__version_numbers.pop(index)
+        self.__number_count -= 1
 
     def insertend(self, item):
         self.__version_numbers.append(item)
@@ -131,6 +138,3 @@ class PyVersion:
 
     def __repr__(self):
         return "PyVersion"+str(tuple(self.version_numbers))
-
-
-
