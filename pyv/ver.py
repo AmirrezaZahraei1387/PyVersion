@@ -1,6 +1,3 @@
-import re
-
-
 SEPERATOR = '.'
 DEFAULT_V_NUM = 0
 
