@@ -3,7 +3,7 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "PyVersion"
+name = "pyv"
 version = "0.1"
 authors = [
     {name = "Ammireza Zahraei", email = "amir.reza.zahraei@gmail.com"},

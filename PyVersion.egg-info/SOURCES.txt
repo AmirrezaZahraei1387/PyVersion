@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PyVersion.egg-info/PKG-INFO
+PyVersion.egg-info/SOURCES.txt
+PyVersion.egg-info/dependency_links.txt
+PyVersion.egg-info/top_level.txt
+pyv/__init__.py
+pyv/ver.py
